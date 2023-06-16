@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0958F2CA29D6638A008AA06D /* SlotSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0958F2C929D6638A008AA06D /* SlotSymbols.swift */; };
 		096CC80C29D4F6CE000FF86B /* SlotsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096CC80B29D4F6CE000FF86B /* SlotsApp.swift */; };
-		096CC80E29D4F6CE000FF86B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096CC80D29D4F6CE000FF86B /* ContentView.swift */; };
+		096CC80E29D4F6CE000FF86B /* SlotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096CC80D29D4F6CE000FF86B /* SlotsView.swift */; };
 		096CC81029D4F6CE000FF86B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 096CC80F29D4F6CE000FF86B /* Assets.xcassets */; };
 		096CC81329D4F6CE000FF86B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 096CC81229D4F6CE000FF86B /* Preview Assets.xcassets */; };
 		096CC81E29D4F6CF000FF86B /* SlotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096CC81D29D4F6CF000FF86B /* SlotsTests.swift */; };
 		096CC82929D4F6CF000FF86B /* SlotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096CC82829D4F6CF000FF86B /* SlotsUITests.swift */; };
+		096CC83D29D4F711000FF86B /* SlotsGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096CC83C29D4F711000FF86B /* SlotsGame.swift */; };
+		096CC84229D4F71B000FF86B /* SlotsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096CC84129D4F71B000FF86B /* SlotsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0958F2C929D6638A008AA06D /* SlotSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotSymbols.swift; sourceTree = "<group>"; };
 		096CC80829D4F6CE000FF86B /* Slots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		096CC80B29D4F6CE000FF86B /* SlotsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsApp.swift; sourceTree = "<group>"; };
-		096CC80D29D4F6CE000FF86B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		096CC80D29D4F6CE000FF86B /* SlotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsView.swift; sourceTree = "<group>"; };
 		096CC80F29D4F6CE000FF86B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		096CC81229D4F6CE000FF86B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		096CC81429D4F6CE000FF86B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 		096CC82429D4F6CF000FF86B /* SlotsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlotsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		096CC82829D4F6CF000FF86B /* SlotsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsUITests.swift; sourceTree = "<group>"; };
 		096CC82A29D4F6CF000FF86B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096CC83C29D4F711000FF86B /* SlotsGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsGame.swift; sourceTree = "<group>"; };
+		096CC84129D4F71B000FF86B /* SlotsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				096CC80B29D4F6CE000FF86B /* SlotsApp.swift */,
-				096CC80D29D4F6CE000FF86B /* ContentView.swift */,
+				096CC80D29D4F6CE000FF86B /* SlotsView.swift */,
+				096CC83C29D4F711000FF86B /* SlotsGame.swift */,
+				096CC84129D4F71B000FF86B /* SlotsViewModel.swift */,
+				0958F2C929D6638A008AA06D /* SlotSymbols.swift */,
 				096CC80F29D4F6CE000FF86B /* Assets.xcassets */,
 				096CC81429D4F6CE000FF86B /* Info.plist */,
 				096CC81129D4F6CE000FF86B /* Preview Content */,
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				096CC80E29D4F6CE000FF86B /* ContentView.swift in Sources */,
+				096CC84229D4F71B000FF86B /* SlotsViewModel.swift in Sources */,
+				096CC83D29D4F711000FF86B /* SlotsGame.swift in Sources */,
+				096CC80E29D4F6CE000FF86B /* SlotsView.swift in Sources */,
 				096CC80C29D4F6CE000FF86B /* SlotsApp.swift in Sources */,
+				0958F2CA29D6638A008AA06D /* SlotSymbols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
